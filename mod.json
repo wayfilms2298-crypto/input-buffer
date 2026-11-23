@@ -1,0 +1,67 @@
+{
+	"geode": "4.10.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074"
+	},
+	"id": "wayfilms2298.input-buffer",
+	"name": "Input Buffer",
+	"version": "v1.0.0",
+	"developer": "wayfilms2298",
+	"description": "Makes slightly-early clicks still count by buffering your jump input.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"buffer-ms": {
+			"type": "int",
+			"name": "Buffer Window (ms)",
+			"description": "How long a quick tap is kept 'held' so it can still trigger a jump or orb. 60-100 ms feels natural; higher is more forgiving.",
+			"default": 80,
+			"min": 0,
+			"max": 250,
+			"control": {
+				"slider": true,
+				"arrows": true,
+				"big-arrows": false,
+				"arrow-step": 5,
+				"slider-step": 5
+			}
+		},
+		"cube": {
+			"type": "bool",
+			"name": "Buffer in Cube",
+			"default": true
+		},
+		"robot": {
+			"type": "bool",
+			"name": "Buffer in Robot",
+			"default": true
+		},
+		"ball": {
+			"type": "bool",
+			"name": "Buffer in Ball",
+			"default": true
+		},
+		"spider": {
+			"type": "bool",
+			"name": "Buffer in Spider",
+			"default": true
+		},
+		"ufo": {
+			"type": "bool",
+			"name": "Buffer in UFO",
+			"description": "Only helps with orbs; UFO flaps fire on press anyway.",
+			"default": false
+		},
+		"in-practice-only": {
+			"type": "bool",
+			"name": "Practice Mode Only",
+			"description": "Only buffer inputs while in practice mode.",
+			"default": false
+		}
+	}
+}
