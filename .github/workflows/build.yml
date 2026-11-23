@@ -34,6 +34,7 @@ jobs:
           sdk: v4.10.2        # Geode v4 = GD 2.2074. Must match "geode" in mod.json.
           bindings: geode-sdk/bindings
           bindings-ref: 262722335fa38846bd3df71ea6cad2d615534b6e   # last 2.2074 bindings for Geode v4
+          configure-args: -DSKIP_BUILDING_CODEGEN=OFF   # build codegen from the pinned bindings
           combine: true
           target: ${{ matrix.config.target }}
 
